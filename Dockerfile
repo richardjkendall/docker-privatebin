@@ -45,6 +45,6 @@ COPY entrypoint.sh /
 # Mark dirs as volumes that need to be writable, allows running the container --read-only
 VOLUME [ "/privatebin/data", "/privatebin/cfg", "/etc", "/tmp", "/var/lib/nginx/tmp", "/run", "/var/log" ]
 
-EXPOSE 80
+EXPOSE 8080
 LABEL description "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data."
 CMD ["/entrypoint.sh"]
